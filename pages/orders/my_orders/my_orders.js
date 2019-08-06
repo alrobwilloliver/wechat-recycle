@@ -5,14 +5,28 @@ Page({
    * Page initial data
    */
   data: {
-
+    tabs: ["All orders", "My orders"],
+    activeIndex: 1,
   },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+        });
+      }
+    });
+  },
+  tabClick: function (e) {
+    this.setData({
+      sliderOffset: e.currentTarget.offsetLeft,
+      activeIndex: e.currentTarget.id
+    });
+    wx.navigateTo({
+      url: "/pages/orders/all_orders/all_orders"
+    })
   },
 
   /**

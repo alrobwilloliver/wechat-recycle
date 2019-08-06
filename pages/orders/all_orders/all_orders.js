@@ -1,10 +1,8 @@
 // pages/orders/all_orders/all_orders.js
 Page({
   data: {
-    tabs: ["选项一", "选项二", "选项三"],
-    activeIndex: 1,
-    sliderOffset: 0,
-    sliderLeft: 0
+    tabs: ["All orders", "My orders"],
+    activeIndex: 0,
   },
   onLoad: function () {
     var that = this;
@@ -22,6 +20,9 @@ Page({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
+    wx.navigateTo({
+      url: "/pages/orders/my_orders/my_orders"
+    })
   },
 
 
