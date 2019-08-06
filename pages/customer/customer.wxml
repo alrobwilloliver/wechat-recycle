@@ -1,0 +1,12 @@
+<!--pages/customer/customer.wxml-->
+<view>Submit your trashy order</view>
+
+<form>
+<label>Time</label>
+<input class="input-space"></input>
+<label>Location</label>
+<input class="input-space"></input>
+<label>Phone Number</label>
+<input class="input-space"></input>
+<button class="submit-trash-btn">Submit</button>
+</form>

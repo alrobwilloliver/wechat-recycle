@@ -1,0 +1,17 @@
+/* pages/customer/customer.wxss */
+.submit-trasher-btn {
+  border-radius:8rpx;
+  text-align:center;
+  font-size:32rpx;
+  padding:0 32rpx;
+  background-color:rgba(46, 252, 73, 0.932);
+  color:rgba(46, 252, 73, 0.932);
+}
+
+.input-space {
+padding: 20rpx;
+}
+
+.view {
+  flex:center;
+}
