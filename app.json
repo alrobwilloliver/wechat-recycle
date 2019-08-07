@@ -3,13 +3,14 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/customer/customer",
-    "pages/customer-order-information/customer-order-information"
+    "pages/customer-order-information/customer-order-information",
+    "pages/orders/all_orders/all_orders",
+    "pages/orders/my_orders/my_orders"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeRecycle",
+    "navigationBarTextStyle": "white" 
+  }
 }

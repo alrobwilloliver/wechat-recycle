@@ -40,27 +40,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
-					"name": "Customer ",
-					"pathName": "pages/customer/customer",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 1,
-					"name": "customer order information ",
-					"pathName": "pages/customer-order-information/customer-order-information",
+					"name": "all orders",
+					"pathName": "pages/orders/all_orders/all_orders",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "All orders customer",
-					"pathName": "pages/all-orders-customer/all-orders-customer",
-					"query": "",
+					"name": "my orders",
+					"pathName": "pages/orders/my_orders/my_orders",
 					"scene": null
 				}
 			]
