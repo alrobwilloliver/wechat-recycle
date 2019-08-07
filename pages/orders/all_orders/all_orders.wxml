@@ -2,19 +2,13 @@
 
 <view class="page">
     <view>Orders:</view>
-    <map longitude="{{my_longitude}}" latitude="{{my_latitude}}" scale="{{15}}" style="width: 100%; height: 60vh;" markers="{{mk}}"></map>
-    <!-- <view>Get current location</view>
-    <view>--------------------</view>
-    <view>Latitude : {{latitude}}</view>
-    <view>Longitude : {{longitude}}</view>
-    <view>Speed : {{speed}}</view>
-    <view>Accuracy : {{Accuracy}}</view> -->
+    <map></map>
   <view>
-    <view>1. Alan</view>
+    <view>1. John Fu</view>
     <view>Address:</view>
-    <view id="address">龙井苑 成都</view>
+    <view>Chengdu</view>
     <view>Customer's Number</view>
-    <view> 178 6382 0025</view>
+    <view> 0039 333 48 336 31</view>
     <view>Collection On: 28/08/19 6pm </view>
     <button class="weui-btn" type="primary">Accept</button>
   </view>
@@ -22,7 +16,7 @@
   <view>
     <view>2. Zoe</view>
     <view>Address:</view>
-    <view>永立龙寓 成都</view>
+    <view>Chengdu</view>
     <view>Customer's Number</view>
     <view> 0039 333 48 336 66</view>
     <view>Collection On: 21/08/19 8pm </view>

@@ -13,10 +13,5 @@
     "navigationBarTitleText": "WeRecycle",
     "navigationBarTextStyle": "white"
   },
-  "permission": {
-    "scope.userLocation": {
-      "desc": "A message to tell the user why you need permission"
-    }
-  },
-  "sitemapLocation": "sitemap79.json"
+  "sitemapLocation": "sitemap9.json"
 }
