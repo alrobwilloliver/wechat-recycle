@@ -56,5 +56,5 @@ goToOrders: function() {wx.navigateTo({
     success: function(res) {},
     fail: function(res) {},
     complete: function(res) {},
-  })}
+  })},
 })
