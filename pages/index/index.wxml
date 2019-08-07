@@ -1,2 +1,18 @@
 <!--index.wxml-->
 <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <image src="https://images-na.ssl-images-amazon.com/images/I/514fxSmXPnL._SX425_.jpg" class="logo"></image>
+  </view>
+  <view class="usermotto">
+  
+    <text class="user-motto">Welcome to WeRecycle!</text>
+    <wux-button size="large" block type="dark"> Login as Customer </wux-button>
+<wux-button size="large" block type="dark" bindtap="goToOrders"> Login as Collector </wux-button>
+  </view>
+</view>

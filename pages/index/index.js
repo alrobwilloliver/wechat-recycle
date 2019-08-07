@@ -50,5 +50,11 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+goToOrders: function() {wx.navigateTo({
+    url: "/pages/orders/all_orders/all_orders",
+    success: function(res) {},
+    fail: function(res) {},
+    complete: function(res) {},
+  })}
 })

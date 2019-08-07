@@ -39,13 +39,46 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "all orders",
+					"pathName": "pages/orders/all_orders/all_orders",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "All orders collector",
+					"pathName": "pages/all-orders-collector/all-orders-collector ",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customer-order-information",
+					"pathName": "pages/customer-order-information/customer-order-information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }
