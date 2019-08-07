@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/customer/customer",
+    "pages/customer-order-information/customer-order-information",
+    "pages/orders/all_orders/all_orders",
+    "pages/orders/my_orders/my_orders"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeRecycle",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap9.json"
+}
