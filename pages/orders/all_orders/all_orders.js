@@ -21,7 +21,8 @@ Page({
             latitude: my_latitude,
             longitude: my_longitude,
             width: 40,
-            height: 40
+            height: 40,
+            callout: { content: "Your Location!", fontSize: 15, color: "#000000", padding: 10 }
           }//, add more markers here
         ]
         that.setData({mk})
