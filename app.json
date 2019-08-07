@@ -5,7 +5,9 @@
     "pages/customer/customer",
     "pages/customer-order-information/customer-order-information",
     "pages/orders/all_orders/all_orders",
-    "pages/orders/my_orders/my_orders"
+    "pages/orders/my_orders/my_orders",
+    "pages/order-information/order-information"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,23 @@
+<!--pages/order-information/order-information.wxml-->
+<text>pages/order-information/order-information.wxml</text>
+<view>
+<view>Order Id</view>
+<view>123456</view>
+<view>Order Time</view>
+<view>12.08</view>
+<view>Address</view>
+<view>Chengdu</view>
+<view>Collection Status</view>
+
+<view wx:if="{{collection_status=='Order Taken'}}">
+  <view>Order Taken</view>
+  <view>Collector's Name</view>
+  <view>Bruce Lee</view>
+  <view>Collector's Number</view>
+  <view>+86 123449494</view>
+ </view>
+ <view wx:else> Waiting to be taken</view>
+</view>
+
+
+
