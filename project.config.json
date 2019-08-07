@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -57,9 +57,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "All orders customer",
-					"pathName": "pages/all-orders-customer/all-orders-customer",
+					"id": 2,
+					"name": "All orders collector",
+					"pathName": "pages/all-orders-collector/all-orders-collector ",
 					"query": "",
 					"scene": null
 				}

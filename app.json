@@ -4,6 +4,7 @@
     "pages/logs/logs",
     "pages/customer/customer",
     "pages/customer-order-information/customer-order-information"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
