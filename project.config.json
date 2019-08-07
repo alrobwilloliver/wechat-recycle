@@ -40,9 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-
-			"current": 2,
-
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -52,12 +50,24 @@
 					"scene": null
 				},
 				{
-
 					"id": 2,
 					"name": "All orders collector",
 					"pathName": "pages/all-orders-collector/all-orders-collector ",
 					"query": "",
-
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customer-order-information",
+					"pathName": "pages/customer-order-information/customer-order-information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				}
 			]

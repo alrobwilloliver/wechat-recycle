@@ -12,7 +12,7 @@
   
     <text class="user-motto">Welcome to WeRecycle!</text>
     <wux-button size="large" block type="dark"> Login as Customer </wux-button>
-<wux-button size="large" block type="dark"> Login as Collector </wux-button>
+<wux-button size="large" block type="dark" bindtap="goToOrders"> Login as Collector </wux-button>
   </view>
 </view>
 
