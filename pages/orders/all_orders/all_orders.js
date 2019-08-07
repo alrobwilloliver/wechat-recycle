@@ -6,6 +6,28 @@ Page({
   },
   onLoad: function () {
     var that = this;
+    wx.getLocation({
+      type: 'GCJ-02', // **1
+      success: function (res) {
+        const my_latitude = res.latitude
+        const my_longitude = res.longitude
+        const my_speed = res.speed
+        const my_accuracy = res.accuracy
+        that.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
+        const mk = [
+          {
+            iconPath: "/img/marker.png", // **1
+            id: 0,
+            latitude: my_latitude,
+            longitude: my_longitude,
+            width: 40,
+            height: 40,
+            callout: { content: "Your Location!", fontSize: 15, color: "#000000", padding: 10 }
+          }//, add more markers here
+        ]
+        that.setData({mk})
+      },
+    })
     wx.getSystemInfo({
       success: function (res) {
         that.setData({

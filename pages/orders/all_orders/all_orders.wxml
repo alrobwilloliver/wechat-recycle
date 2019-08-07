@@ -2,7 +2,13 @@
 
 <view class="page">
     <view>Orders:</view>
-    <map></map>
+    <map longitude="{{my_longitude}}" latitude="{{my_latitude}}" scale="{{15}}" style="width: 100%; height: 60vh;" markers="{{mk}}"></map>
+    <!-- <view>Get current location</view>
+    <view>--------------------</view>
+    <view>Latitude : {{latitude}}</view>
+    <view>Longitude : {{longitude}}</view>
+    <view>Speed : {{speed}}</view>
+    <view>Accuracy : {{Accuracy}}</view> -->
   <view>
     <view>1. John Fu</view>
     <view>Address:</view>

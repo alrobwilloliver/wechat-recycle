@@ -11,6 +11,12 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeRecycle",
-    "navigationBarTextStyle": "white" 
-  }
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "A message to tell the user why you need permission"
+    }
+  },
+  "sitemapLocation": "sitemap79.json"
 }
