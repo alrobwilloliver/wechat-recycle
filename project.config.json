@@ -4,17 +4,25 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
-	"appid": "wx6ad759e759dd9d7d",
+	"appid": "wxc64ac9e2a182d9c6",
 	"projectname": "wechat-werecycle",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -40,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -50,23 +58,16 @@
 					"scene": null
 				},
 				{
-					"id": 2,
-					"name": "All orders collector",
-					"pathName": "pages/all-orders-collector/all-orders-collector ",
+					"id": -1,
+					"name": "my orders",
+					"pathName": "pages/orders/my_orders/my_orders",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "customer-order-information",
+					"name": "pages/customer-order-information/customer-order-information",
 					"pathName": "pages/customer-order-information/customer-order-information",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
 					"query": "",
 					"scene": null
 				},
