@@ -27,16 +27,20 @@ Page({
     const order = {
       name: name,
       address: address,
-      phone_number: phoneNumber,
+      customer_phone_number: phoneNumber,
       date: date,
       time: time,
       customer_id: 1
     }
+
+    getApp().globalData.order = order
+
     wx.request({
       url:'http://localhost:3000/api/v1/orders',
       method: 'POST',
       data: order,
-      success(){
+      success(res){
+        console.log(res)
         wx.redirectTo({
           url: '../customer-order-information/customer-order-information',
         });

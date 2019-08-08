@@ -1,3 +1,5 @@
+import apiClient from "../../utils/apiClient.js"
+
 // pages/customer-order-information/customer-order-information.js
 Page({
 
@@ -12,7 +14,33 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    const order = getApp().globalData.order
+    const page = this
+    page.setData({
+      order
+    })
+    console.log(order)
+    // console.log(options)
+    // const { id } = options
 
+    // const getOptions = {
+    //   id,
+    //   success: function (res) {
+    //     console.log(res)
+    //     // const order = res.data.story
+
+    //   },
+    //   fail: function (err) {
+    //     console.log(err)
+    //   }
+    // }
+
+    // apiClient.getOrder(getOptions)
+
+    // page.setData({
+    //   address: "Chengdu"
+    // })
+    // const address = page.data.story.address
   },
 
   /**
