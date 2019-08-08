@@ -29,7 +29,8 @@ Page({
       address: address,
       phone_number: phoneNumber,
       date: date,
-      time: time
+      time: time,
+      customer_id: 1
     }
     wx.request({
       url:'http://localhost:3000/api/v1/orders',
