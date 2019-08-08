@@ -6,7 +6,7 @@
 <view>Name:</view>
 <view>{{order.name}}</view>
 <view>Pick Up Address:</view>
-<view>{{order.address}}</view>
+<view>{{address}}</view>
 <view>Phone Number:</view>
 <view>{{order.customer_phone_number}}</view>
 <view>Pick Up Date:</view>

@@ -6,6 +6,21 @@ Page({
   },
   onLoad: function () {
     var that = this;
+    const options = {
+      success: function (res) {
+        console.log(res)
+        const stories = res.data.orders
+
+        page.setData({
+          orders
+        })
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    }
+    apiClient.getOrders(options)
+    
     wx.getLocation({
       type: 'GCJ-02', // **1
       success: function (res) {

@@ -15,9 +15,11 @@ Page({
    */
   onLoad: function (options) {
     const order = getApp().globalData.order
+    const address = getApp().globalData.address
     const page = this
     page.setData({
-      order
+      order,
+      address
     })
     console.log(order)
     // console.log(options)
