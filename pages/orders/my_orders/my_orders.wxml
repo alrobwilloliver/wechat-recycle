@@ -1,11 +1,26 @@
 <!--pages/orders/my_orders/my_orders.wxml-->
 <view class="page">
-<!-- <div class="container">
-  <text class="title">Orders</text>
-</div> -->
-  <div class="container">
-    <text class="title">Orders</text>
-  </div>
+    <view> My Orders:</view>
+    <map></map>
+  <view>
+    <view>1. Augusto Guglielmi </view>
+    <view>Address:</view>
+    <view>Ventimiglia (IM), Italy</view>
+    <view>Customer's Number</view>
+    <view> 0039 333 48 336 31</view>
+    <view>Collection On: 30/08/19 6pm </view>
+    <button class="weui-btn" type="primary">Mark as Done</button>
+  </view>
+
+  <view>
+    <view>2. Francesco Totti</view>
+    <view>Address:</view>
+    <view>Roma</view>
+    <view>Customer's Number</view>
+    <view> 10</view>
+    <view>Collection On: 21/08/19 8pm </view>
+    <button class="weui-btn" type="primary">Mark as Done</button>
+  </view>
 
   <view class="page__bd">
       <view class="weui-tab">
