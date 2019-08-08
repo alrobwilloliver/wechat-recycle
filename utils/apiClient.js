@@ -4,7 +4,7 @@ const getOrders = (options) => {
   const { success, fail } = options
 
   return wx.request({
-    url: baseUrl + "all_orders",
+    url: baseUrl + "api_v1_orders",
     method: "get",
     success,
     fail
