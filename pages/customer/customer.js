@@ -53,8 +53,15 @@ Page({
     })
   },
   inputAddress: function (e) {
-    this.setData({
-    address: e.detail.value
+    // this.setData({
+    // address: e.detail.value
+    // })
+    wx.chooseLocation({
+      success: function (res) {
+        getApp().globalData.address = `${res.name}, ${res.address}`
+        getApp().globalData.coordinates = [res.longitude, res.latitude]
+        
+      }
     })
   },
   inputName: function (e) {
