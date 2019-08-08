@@ -51,10 +51,14 @@ Page({
       hasUserInfo: true
     })
   },
-goToOrders: function() {wx.navigateTo({
-    url: "/pages/orders/all_orders/all_orders",
-    success: function(res) {},
-    fail: function(res) {},
-    complete: function(res) {},
-  })},
+  goToOrders: function() {
+    wx.navigateTo({
+      url: "/pages/orders/all_orders/all_orders",
+    })
+  },
+  goToCustomer: function () {
+    wx.navigateTo({
+      url: "/pages/customer/customer",
+    })
+  },
 })

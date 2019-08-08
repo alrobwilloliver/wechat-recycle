@@ -5,7 +5,18 @@ Page({
    * Page initial data
    */
   data: {
-
+    date: "2019-08-08",
+    time: "12:00",
+  },
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: function (e) {
+    this.setData({
+      time: e.detail.value
+    })
   },
 
   /**
