@@ -8,16 +8,6 @@ Page({
     date: "2019-08-08",
     time: "12:00",
   },
-  bindDateChange: function (e) {
-    this.setData({
-      date: e.detail.value
-    })
-  },
-  bindTimeChange: function (e) {
-    this.setData({
-      time: e.detail.value
-    })
-  },
   /**
    * redirection
    */
@@ -28,29 +18,60 @@ Page({
 
   submitOrder: function(e) {
     console.log(e)
-    let time = e.detail.value.time;
-    let location = e.detail.value.location;
-    let phone_number = e.detail.value.phonenumber;
-
-    let order = {
+    const page = this
+    const address = page.data.address
+    const date = page.data.date
+    const phoneNumber = page.data.phoneNumber
+    const time = page.data.time
+    const name = page.data.name
+    const order = {
+      name: name,
+      address: address,
+      customer_phone_number: phoneNumber,
+      date: date,
       time: time,
-      address: location,
-      customer_phone_number: phone_number,
-      customer_id: 37
+      customer_id: 1
     }
-    console.log(order)
+
+    getApp().globalData.order = order
+
     wx.request({
       url:'http://localhost:3000/api/v1/orders',
       method: 'POST',
       data: order,
-      success(){
+      success(res){
+        console.log(res)
         wx.redirectTo({
           url: '../customer-order-information/customer-order-information',
         });
       }
     });
   },
-
+  phoneInput: function (e) {
+    this.setData({
+      phoneNumber: e.detail.value
+    })
+  },
+  inputAddress: function (e) {
+    this.setData({
+    address: e.detail.value
+    })
+  },
+  inputName: function (e) {
+    this.setData({
+    name: e.detail.value
+    })
+  },
+    bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: function (e) {
+    this.setData({
+      time: e.detail.value
+    })
+  },
 
   /**
    * Lifecycle function--Called when page load
