@@ -1,0 +1,52 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+      <view class="weui-cell  weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="请输入姓名" />
+          </view>
+      </view>
+      <view class="weui-cell  weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">地址</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" bindtap="openMap" placeholder="请输入地址" />
+          </view>
+      </view>
+      <view class="weui-cell  weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="请输入手机号" />
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label">日期</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker mode="date" value="{{date}}" start="2019-08-08" end="2019-09-08" bindchange="bindDateChange">
+                  <view class="weui-input">{{date}}</view>
+              </picker>
+          </view>
+      </view>
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label">时间</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker mode="time" value="{{time}}" bindchange="bindTimeChange">
+                  <view class="weui-input">{{time}}</view>
+              </picker>
+          </view>
+      </view>
+
+  <view class="weui-btn-area">
+      <button class="weui-btn" type="primary" bindtap="showTopTips">Create new order</button>
+        </view>
+    </view>
+</view>

@@ -5,8 +5,52 @@ Page({
    * Page initial data
    */
   data: {
-
+    date: "2019-08-08",
+    time: "12:00",
   },
+  bindDateChange: function (e) {
+    this.setData({
+      date: e.detail.value
+    })
+  },
+  bindTimeChange: function (e) {
+    this.setData({
+      time: e.detail.value
+    })
+  },
+  /**
+   * redirection
+   */
+  redirection: function(){
+    
+  },
+
+
+  submitOrder: function(e) {
+    console.log(e)
+    let time = e.detail.value.time;
+    let location = e.detail.value.location;
+    let phone_number = e.detail.value.phonenumber;
+
+    let order = {
+      time: time,
+      address: location,
+      customer_phone_number: phone_number,
+      customer_id: 37
+    }
+    console.log(order)
+    wx.request({
+      url:'http://localhost:3000/api/v1/orders',
+      method: 'POST',
+      data: order,
+      success(){
+        wx.redirectTo({
+          url: '../customer-order-information/customer-order-information',
+        });
+      }
+    });
+  },
+
 
   /**
    * Lifecycle function--Called when page load

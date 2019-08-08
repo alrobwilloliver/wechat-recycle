@@ -23,7 +23,29 @@ Page({
             width: 40,
             height: 40,
             callout: { content: "Your Location!", fontSize: 15, color: "#000000", padding: 10 }
-          }//, add more markers here
+          },
+          {
+            iconPath: "/img/Trash 回收站.png", // **1
+            id: 1,
+            latitude: 30.6444,
+            longitude: 104.0999,
+            width: 40,
+            height: 40,
+            callout: {
+              content: "Pick up for Alan", fontSize: 15, color: "#000000", padding: 10
+            }
+          },
+          {
+            iconPath: "/img/Trash 回收站.png", // **1
+            id: 2,
+            latitude: 30.66690,
+            longitude: 104.06654,
+            width: 40,
+            height: 40,
+            callout: {
+              content: "Pick up for Zoe", fontSize: 15, color: "#000000", padding: 10
+            }
+          }
         ]
         that.setData({mk})
       },
