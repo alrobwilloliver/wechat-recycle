@@ -9,6 +9,11 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  go: function () {
+    wx.redirectTo({
+      url: '../customer/customer',
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
