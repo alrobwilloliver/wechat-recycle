@@ -12,6 +12,7 @@ const getOrders = (options) => {
 }
 
 const getOrder = (options) => {
+
   const { id, success, fail } = options
 
   return wx.request({
@@ -21,7 +22,6 @@ const getOrder = (options) => {
     fail
   })
 }
-
 
 const updateOrder = options => {
   const { id, data, success, fail } = options

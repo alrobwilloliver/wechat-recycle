@@ -30,23 +30,34 @@ Page({
           {
             iconPath: "/img/Trash 回收站.png", // **1
             id: 1,
-            latitude: 30.6444,
-            longitude: 104.0999,
+            latitude: 30.6600,
+            longitude: 104.0850,
             width: 40,
             height: 40,
             callout: {
-              content: "Pick up for Alan", fontSize: 15, color: "#000000", padding: 10
+              content: "Pick up for Zlatan", fontSize: 15, color: "#000000", padding: 10
             }
           },
           {
             iconPath: "/img/Trash 回收站.png", // **1
             id: 2,
-            latitude: 30.66690,
-            longitude: 104.06654,
+            latitude: 30.6600,
+            longitude: 104.0750,
             width: 40,
             height: 40,
             callout: {
-              content: "Pick up for Zoe", fontSize: 15, color: "#000000", padding: 10
+              content: "Pick up for Vladimir", fontSize: 15, color: "#000000", padding: 10
+            }
+            },
+            {
+            iconPath: "/img/Trash 回收站.png", // **1
+            id: 3,
+            latitude: 30.6500,
+            longitude: 104.0750,
+            width: 40,
+            height: 40,
+            callout: {
+              content: "Pick up for Silvio", fontSize: 15, color: "#000000", padding: 10
             }
           }
         ]

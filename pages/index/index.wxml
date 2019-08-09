@@ -1,5 +1,6 @@
 <!--index.wxml-->
-<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button> -->
+<view class="page">
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -15,4 +16,5 @@
     <wux-button size="large" block type="dark" bindtap="goToCustomer"> Login as Customer </wux-button>
     <wux-button size="large" block type="dark" bindtap="goToOrders"> Login as Collector </wux-button>
   </view>
+</view>
 </view>

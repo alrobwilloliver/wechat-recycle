@@ -1,9 +1,9 @@
 <!--pages/orders/my_orders/my_orders.wxml-->
 <view class="page">
-    <view> My Orders:</view>
+    <view class="information"> My Orders:</view>
     <map longitude="{{my_longitude}}" latitude="{{my_latitude}}" scale="{{15}}" style="width: 100%; height: 60vh;" markers="{{mk}}"></map>
-  <view>
-    <view>1. Augusto Guglielmi </view>
+  <view class="information">
+    <view>1. Zlatan Ibrahimovic </view>
     <view>Address:</view>
     <view>Ventimiglia (IM), Italy</view>
     <view>Customer's Number</view>
@@ -12,8 +12,18 @@
     <button class="weui-btn" type="primary">Mark as Done</button>
   </view>
 
-  <view>
-    <view>2. Francesco Totti</view>
+  <view class="information">
+    <view>2. Vladimir Putin</view>
+    <view>Address:</view>
+    <view>Roma</view>
+    <view>Customer's Number</view>
+    <view> 10</view>
+    <view>Collection On: 21/08/19 8pm </view>
+    <button class="weui-btn" type="primary">Mark as Done</button>
+  </view>
+
+  <view class="information">
+    <view>3. Sivio Berlusconi</view>
     <view>Address:</view>
     <view>Roma</view>
     <view>Customer's Number</view>

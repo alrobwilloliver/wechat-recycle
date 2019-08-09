@@ -25,10 +25,18 @@ Page({
 
     apiClient.getOrders(options)
 
-    
     wx.getLocation({
       type: 'GCJ-02', // **1
       success: function (res) {
+        console.log(11111111111111111111, res)
+        // const latitude = getApp().globalData.latitude
+        // const longitude = getApp().globalData.longitude
+        wx.request({
+          url: '',
+        })
+        console.log(res)
+        // page.setData({longitude: longitude, latitude: latitude})
+        // page.setData({order: order})
         const my_latitude = res.latitude
         const my_longitude = res.longitude
         const my_speed = res.speed
@@ -47,12 +55,12 @@ Page({
           {
             iconPath: "/img/Trash 回收站.png", // **1
             id: 1,
-            latitude: 30.6444,
-            longitude: 104.0999,
+            latitude: 30.66650,
+            longitude: 104.06984,
             width: 40,
             height: 40,
             callout: {
-              content: "Pick up for Alan", fontSize: 15, color: "#000000", padding: 10
+              content: `Pick up for Alan`, fontSize: 15, color: "#000000", padding: 10
             }
           },
           {
@@ -69,6 +77,9 @@ Page({
         ]
         that.setData({mk})
       },
+      fail: function(err) {
+        console.log(err)
+      }
     })
     // wx.getSystemInfo({
     //   success: function (res) {
