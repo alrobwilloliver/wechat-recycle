@@ -1,0 +1,5 @@
+<!--pages/customer-order-pickedup/customer-order-pickedup.wxml-->
+<view class="information">Your order has been picked up!</view>
+<image class="image" src="https://previews.123rf.com/images/chudtsankov/chudtsankov1607/chudtsankov160700280/61547750-happy-green-recycle-bin-cartoon-mascot-character-full-with-garbage-bags-giving-a-thumb-up.jpg"></image>
+
+

@@ -1,6 +1,6 @@
 <view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
     <view class="page__bd">
-      <view class="weui-cell  weui-cell_vcode">
+      <view class="div-box">
           <view class="weui-cell__hd">
               <view class="weui-label">姓名</view>
           </view>
@@ -8,7 +8,7 @@
               <input class="weui-input" bindblur="inputName" placeholder="请输入姓名" />
           </view>
       </view>
-      <view class="weui-cell  weui-cell_vcode">
+      <view class="div-box">
           <view class="weui-cell__hd">
               <view class="weui-label">地址</view>
           </view>
@@ -16,7 +16,7 @@
               <input class="weui-input" bindtap="inputAddress" placeholder="请输入地址" value="{{location_name}}" />
           </view>
       </view>
-      <view class="weui-cell  weui-cell_vcode">
+      <view class="div-box">
           <view class="weui-cell__hd">
               <view class="weui-label">手机号</view>
           </view>
@@ -24,7 +24,7 @@
               <input bindblur="phoneInput" class="weui-input" placeholder="请输入手机号" />
           </view>
       </view>
-      <view class="weui-cell ">
+      <view class="div-box">
           <view class="weui-cell__hd">
               <view class="weui-label">日期</view>
           </view>
@@ -34,7 +34,7 @@
               </picker>
           </view>
       </view>
-      <view class="weui-cell ">
+      <view class="div-box">
           <view class="weui-cell__hd">
               <view class="weui-label">时间</view>
           </view>

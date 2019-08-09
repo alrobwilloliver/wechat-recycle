@@ -1,11 +1,14 @@
 // pages/orders/all_orders/all_orders.js
+import apiClient from "../../../utils/apiClient.js"
 Page({
   data: {
     tabs: ["All orders", "My orders"],
     activeIndex: 0,
   },
+
   onLoad: function () {
-    var that = this;
+    const page = this;
+
     const options = {
       success: function (res) {
         console.log(res)
@@ -19,8 +22,8 @@ Page({
         console.log(err)
       }
     }
-    // apiClient.getOrders(options)
-    
+    apiClient.getOrders(options)
+      
     wx.getLocation({
       type: 'GCJ-02', // **1
       success: function (res) {
@@ -85,6 +88,7 @@ Page({
       }
     });
   },
+  
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,

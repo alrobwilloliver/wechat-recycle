@@ -7,9 +7,63 @@ Page({
   data: {
     tabs: ["All orders", "My orders"],
     activeIndex: 1,
-  },
-  onLoad: function () {
+  }, onLoad: function () {
     var that = this;
+    wx.getLocation({
+      type: 'GCJ-02', // **1
+      success: function (res) {
+        const my_latitude = res.latitude
+        const my_longitude = res.longitude
+        const my_speed = res.speed
+        const my_accuracy = res.accuracy
+        that.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
+        const mk = [
+          {
+            iconPath: "/img/marker.png", // **1
+            id: 0,
+            latitude: my_latitude,
+            longitude: my_longitude,
+            width: 40,
+            height: 40,
+            callout: { content: "Your Location!", fontSize: 15, color: "#000000", padding: 10 }
+          },
+          {
+            iconPath: "/img/Trash 回收站.png", // **1
+            id: 1,
+            latitude: 30.6600,
+            longitude: 104.0850,
+            width: 40,
+            height: 40,
+            callout: {
+              content: "Pick up for Zlatan", fontSize: 15, color: "#000000", padding: 10
+            }
+          },
+          {
+            iconPath: "/img/Trash 回收站.png", // **1
+            id: 2,
+            latitude: 30.6600,
+            longitude: 104.0750,
+            width: 40,
+            height: 40,
+            callout: {
+              content: "Pick up for Vladimir", fontSize: 15, color: "#000000", padding: 10
+            }
+            },
+            {
+            iconPath: "/img/Trash 回收站.png", // **1
+            id: 3,
+            latitude: 30.6500,
+            longitude: 104.0750,
+            width: 40,
+            height: 40,
+            callout: {
+              content: "Pick up for Silvio", fontSize: 15, color: "#000000", padding: 10
+            }
+          }
+        ]
+        that.setData({ mk })
+      },
+    })
     wx.getSystemInfo({
       success: function (res) {
         that.setData({

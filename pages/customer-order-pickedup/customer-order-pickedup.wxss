@@ -1,4 +1,4 @@
-/* pages/customer-order-information/customer-order-information.wxss */
+/* pages/customer-order-pickedup/customer-order-pickedup.wxss */
 .information{
 padding: 20rpx;
 align-content: center;

@@ -1,4 +1,13 @@
-/* pages/customer-order-information/customer-order-information.wxss */
+/* pages/customer-accepted-order/customer-accepted-order.wxss */
+.img {
+  height: 150%;
+  padding:20rpx;
+}
+
+.view {
+  padding:rpx;
+}
+
 .information{
 padding: 20rpx;
 align-content: center;

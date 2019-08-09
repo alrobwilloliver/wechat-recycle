@@ -17,6 +17,7 @@ Page({
 
 
   submitOrder: function(e) {
+    const app = getApp()
     console.log(e)
     const page = this
     // const address = page.data.address
@@ -33,8 +34,9 @@ Page({
       customer_phone_number: phoneNumber,
       date: date,
       time: time,
-      customer_id: 1
+      customer_id: app.globalData.userId
     }
+
 
     getApp().globalData.order = order
 
