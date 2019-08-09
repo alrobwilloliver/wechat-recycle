@@ -14,35 +14,26 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const order = getApp().globalData.order
-    const address = getApp().globalData.address
     const page = this
-    page.setData({
-      order,
-      address
-    })
-    console.log(order)
-    // console.log(options)
-    // const { id } = options
+    const {id} = options
 
-    // const getOptions = {
-    //   id,
-    //   success: function (res) {
-    //     console.log(res)
-    //     // const order = res.data.story
+    const getOptions = {
+      id,
+      success: function (res) {
+        console.log(res)
+        const order = res.data.my_order
 
-    //   },
-    //   fail: function (err) {
-    //     console.log(err)
-    //   }
-    // }
+        page.setData({
+              order
+            })
+      },
+      fail: function (err) {
+        console.log(err)
+      }
+    }
 
-    // apiClient.getOrder(getOptions)
+    apiClient.getOrder(getOptions)
 
-    // page.setData({
-    //   address: "Chengdu"
-    // })
-    // const address = page.data.story.address
   },
 
   /**

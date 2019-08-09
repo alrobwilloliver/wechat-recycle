@@ -8,7 +8,7 @@ Page({
 
   onLoad: function () {
     const page = this;
-
+    const that = this;
     const options = {
       success: function (res) {
         console.log(res)
@@ -24,7 +24,8 @@ Page({
     }
 
     apiClient.getOrders(options)
-      
+
+    
     wx.getLocation({
       type: 'GCJ-02', // **1
       success: function (res) {
@@ -32,7 +33,7 @@ Page({
         const my_longitude = res.longitude
         const my_speed = res.speed
         const my_accuracy = res.accuracy
-        that.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
+        page.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
         const mk = [
           {
             iconPath: "/img/marker.png", // **1
@@ -69,14 +70,14 @@ Page({
         that.setData({mk})
       },
     })
-    wx.getSystemInfo({
-      success: function (res) {
-        that.setData({
-          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
-          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
-        });
-      }
-    });
+    // wx.getSystemInfo({
+    //   success: function (res) {
+    //     that.setData({
+    //       sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+    //       sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+    //     });
+    //   }
+    // });
   },
   
   tabClick: function (e) {

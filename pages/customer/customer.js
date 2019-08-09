@@ -32,20 +32,22 @@ Page({
       customer_phone_number: phoneNumber,
       date: date,
       time: time,
-      customer_id: app.globalData.userId
+      customer_id: 38
     }
 
 
     getApp().globalData.order = order
 
+    console.log(order)
     wx.request({
       url:'http://localhost:3000/api/v1/orders',
       method: 'POST',
       data: order,
       success(res){
         console.log(res)
+        const id = res.data.my_order.id
         wx.redirectTo({
-          url: '../customer-order-information/customer-order-information',
+          url: `../customer-order-information/customer-order-information?id=${id}`,
         });
       }
     });

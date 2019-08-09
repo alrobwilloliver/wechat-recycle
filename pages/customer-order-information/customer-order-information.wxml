@@ -2,11 +2,12 @@
 <view>Waiting for collector to accept order</view>  
 <image src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Clock_reversed.gif"></image>
 
+
 <view>Your Order Information</view>
 <view>Name:</view>
-<view>{{order.customer.name}}</view>
+<view>{{order.customer_info}}</view>
 <view>Pick Up Address:</view>
-<view>{{address}}</view>
+<view>{{order.address}}</view>
 <view>Phone Number:</view>
 <view>{{order.customer_phone_number}}</view>
 <view>Pick Up Date:</view>
