@@ -8,16 +8,21 @@
     <view>Longitude : {{longitude}}</view>
     <view>Speed : {{speed}}</view>
     <view>Accuracy : {{Accuracy}}</view> -->
-  <view>
-    <view>1. Alan</view>
-    <view>Address:</view>
-    <view id="address">龙井苑 成都</view>
-    <view>Customer's Number</view>
-    <view> 178 6382 0025</view>
-    <view>Collection On: 28/08/19 6pm </view>
-    <button class="weui-btn" type="primary">Accept</button>
-  </view>
-
+  <block
+  wx:for="{{orders}}"
+  wx:for-item="order"
+  >
+    <view>
+      <view>Customer Name:{{order.name}}</view>
+      <view>Address:</view>
+      <view id="address">{{order.address}}</view>
+      <view>Customer's Number:</view>
+      <view>{{order.customer_phone_number}}</view>
+      <view>Collection Date: {{order.date}}</view>
+      <view>Collection Time: {{order.time}}</view>
+      <button class="weui-btn" type="primary">Accept</button>
+    </view>
+  </block>
   <view>
     <view>2. Zoe</view>
     <view>Address:</view>
