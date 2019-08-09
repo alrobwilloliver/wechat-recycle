@@ -79,9 +79,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/customer/customer",
-					"pathName": "pages/customer/customer",
+					"id": 4,
+					"name": "customer-accepted-order",
+					"pathName": "pages/customer-accepted-order/customer-accepted-order",
 					"query": "",
 					"scene": null
 				},

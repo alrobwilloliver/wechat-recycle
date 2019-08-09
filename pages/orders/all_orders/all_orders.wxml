@@ -13,7 +13,8 @@
   wx:for="{{orders}}"
   wx:for-item="order"
   >
-    <view data-id="{{order.id}}">
+
+    <view data-id="{{order.id}}" class="information">
       <view>Customer Name:{{order.customer_info}}</view>
       <view>Address:</view>
       <view id="address">{{order.address}}</view>
@@ -21,10 +22,10 @@
       <view>{{order.customer_phone_number}}</view>
       <view>Collection Date: {{order.date}}</view>
       <view>Collection Time: {{order.time}}</view>
-      <button class="weui-btn" type="primary">Accept</button>
+      <button class="weui-btn btn" type="primary">Accept</button>
     </view>
   </block>
-  <view>
+  <view class="information">
 
     <view>2. Zoe</view>
     <view>Address:</view>
@@ -32,7 +33,7 @@
     <view>Customer's Number</view>
     <view> 0039 333 48 336 66</view>
     <view>Collection On: 21/08/19 8pm </view>
-    <button class="weui-btn" type="primary">Accept</button>
+    <button class="weui-btn btn"  type="primary">Accept</button>
   </view>
 
   <view class="page__bd">

@@ -5,31 +5,31 @@
   <view class="information">
     <view>1. Zlatan Ibrahimovic </view>
     <view>Address:</view>
-    <view>Ventimiglia (IM), Italy</view>
+    <view>Chengdu</view>
     <view>Customer's Number</view>
     <view> 0039 333 48 336 31</view>
     <view>Collection On: 30/08/19 6pm </view>
-    <button class="weui-btn" type="primary">Mark as Done</button>
+    <button class="weui-btn btn" type="primary">Mark as Done</button>
   </view>
 
   <view class="information">
     <view>2. Vladimir Putin</view>
     <view>Address:</view>
-    <view>Roma</view>
+    <view>Chengdu</view>
     <view>Customer's Number</view>
     <view> 10</view>
     <view>Collection On: 21/08/19 8pm </view>
-    <button class="weui-btn" type="primary">Mark as Done</button>
+    <button class="weui-btn btn" type="primary">Mark as Done</button>
   </view>
 
   <view class="information">
     <view>3. Sivio Berlusconi</view>
     <view>Address:</view>
-    <view>Roma</view>
+    <view>Chengdu</view>
     <view>Customer's Number</view>
     <view> 10</view>
     <view>Collection On: 21/08/19 8pm </view>
-    <button class="weui-btn" type="primary">Mark as Done</button>
+    <button class="weui-btn btn" type="primary">Mark as Done</button>
   </view>
 
   <view class="page__bd">
