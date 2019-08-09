@@ -6,7 +6,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     // userlogin by JF
-    const host = 'http://localhost:3000/'
+    const host = 'https://werecycle.herokuapp.com/'
     console.log('beginning login')
 
     // 登录

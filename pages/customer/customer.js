@@ -39,7 +39,7 @@ Page({
     getApp().globalData.order = order
 
     wx.request({
-      url:'http://localhost:3000/api/v1/orders',
+      url:'https://werecycle.herokuapp.com/api/v1/orders',
       method: 'POST',
       data: order,
       success(res){
