@@ -4,12 +4,12 @@
 
 <view>Your Order Information</view>
 <view>Name:</view>
-<view>{{order.name}}</view>
+<view>{{order.customer.name}}</view>
 <view>Pick Up Address:</view>
 <view>{{address}}</view>
 <view>Phone Number:</view>
 <view>{{order.customer_phone_number}}</view>
 <view>Pick Up Date:</view>
 <view>{{order.date}}</view>
-<view>Pick Up Time</view>
+<view>Pick Up Time:</view>
 <view>{{order.time}}</view>
