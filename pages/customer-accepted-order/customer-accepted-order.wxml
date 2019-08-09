@@ -1,3 +1,3 @@
 <!--pages/customer-accepted-order/customer-accepted-order.wxml-->
-<view>Congratulations, your order has been accepted by a collector! Soon your trash will be picked up!</view>
+<view class="information">Congratulations, your order has been accepted by a collector! Soon your trash will be picked up!</view>
 <image src="https://previews.123rf.com/images/chudtsankov/chudtsankov1607/chudtsankov160700308/61547923-cute-green-recycle-bin-cartoon-mascot-character-holding-a-recycle-sign.jpg"></image>

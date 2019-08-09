@@ -2,4 +2,35 @@
   position: fixed;
   bottom: 0px;
   width: 100%;
+  color: #7BB32E;
 }
+
+.weui-cell {
+  padding: 20rpx;
+  align-content: center;
+  border-color: rgb(73, 65, 44);
+  background-color: :-moz-only-whitespace;
+  margin-top:50rpx;
+  margin-bottom: 50rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  
+}
+
+
+.div-box{
+padding: 20rpx;
+align-content: center;
+background-color: -moz-only-whitespace;
+margin-top:50rpx;
+margin-bottom: 50rpx;
+margin-left: 50rpx;
+margin-right: 50rpx;
+border-style: solid;
+border-width:1rpx;
+border-color: #7BB32E;
+border-radius: 10rpx;
+border-width: 10rpx;
+background-color: #D3D3D3;
+}
+
