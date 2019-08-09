@@ -17,6 +17,7 @@ Page({
 
 
   submitOrder: function(e) {
+    const app = getApp()
     console.log(e)
     const page = this
     // const address = page.data.address
@@ -25,25 +26,34 @@ Page({
     const phoneNumber = page.data.phoneNumber
     const time = page.data.time
     const name = page.data.name
+    // const address = page.data.address
+    const latitude = page.data.latitude
+    const longitude = page.data.longitude
+    console.log(111111111111, getApp().globalData.address)
     const order = {
       name: name,
-      address: getApp().globalData.address,
+      address: app.globalData.address,
       customer_phone_number: phoneNumber,
       date: date,
       time: time,
-      customer_id: 1
+      customer_id: app.globalData.userId,
+      latitude: latitude,
+      longitude: longitude
     }
+    console.log(order)
 
     getApp().globalData.order = order
 
+    console.log(order)
     wx.request({
       url:'http://localhost:3000/api/v1/orders',
       method: 'POST',
       data: order,
       success(res){
         console.log(res)
+        const id = res.data.my_order.id
         wx.redirectTo({
-          url: '../customer-order-information/customer-order-information',
+          url: `../customer-order-information/customer-order-information?id=${id}`,
         });
       }
     });
@@ -57,11 +67,21 @@ Page({
     // this.setData({
     // address: e.detail.value
     // })
+    const page = this
     wx.chooseLocation({
       success: function (res) {
+        console.log(res)
         getApp().globalData.address = `${res.name}, ${res.address}`
-        getApp().globalData.coordinates = [res.longitude, res.latitude]
-        
+        // getApp().globalData.longitude = res.longitude
+        // getApp().globalData.latitude = res.latitude
+        const locationName = res.name
+        const lat = res.latitude
+        const long = res.longitude
+        page.setData({
+          location_name: locationName,
+          latitude: lat,
+          longitude: long
+        })
       }
     })
   },

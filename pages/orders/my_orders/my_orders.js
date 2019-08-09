@@ -64,14 +64,14 @@ Page({
         that.setData({ mk })
       },
     })
-    wx.getSystemInfo({
-      success: function (res) {
-        that.setData({
-          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
-          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
-        });
-      }
-    });
+    // wx.getSystemInfo({
+    //   success: function (res) {
+    //     that.setData({
+    //       sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+    //       sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+    //     });
+    //   }
+    // });
   },
   tabClick: function (e) {
     this.setData({

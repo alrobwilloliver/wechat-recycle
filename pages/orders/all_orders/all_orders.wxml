@@ -1,7 +1,7 @@
 <!--pages/orders/all_orders/all_orders.wxml-->
 <view class="page">
-    <view class="information">Orders:</view>
-    <map longitude="{{my_longitude}}" latitude="{{my_latitude}}" scale="{{15}}" style="width: 100%; height: 60vh;" markers="{{mk}}"></map>
+    <view>Orders:</view>
+    <map longitude="{{my_longitude}}" latitude="{{my_latitude}}" scale="{{13}}" style="width: 100%; height: 60vh;" markers="{{mk}}"></map>
     <!-- <view>Get current location</view>
     <view>--------------------</view>
     <view>Latitude : {{latitude}}</view>
@@ -13,8 +13,9 @@
   wx:for="{{orders}}"
   wx:for-item="order"
   >
-    <view class="information">
-      <view>Customer Name:{{order.name}}</view>
+
+    <view data-id="{{order.id}}" class="information">
+      <view>Customer Name:{{order.customer_info}}</view>
       <view>Address:</view>
       <view id="address">{{order.address}}</view>
       <view>Customer's Number:</view>

@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
-	"appid": "wxc64ac9e2a182d9c6",
+	"appid": "wx19b3a9168f349712",
 	"projectname": "wechat-werecycle",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -86,23 +86,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 5,
 					"name": "pages/customer-order-information/customer-order-information",
 					"pathName": "pages/customer-order-information/customer-order-information",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "customer-order-pickedup",
-					"pathName": "pages/customer-order-pickedup/customer-order-pickedup",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "test page ",
-					"pathName": "pages/index/index/2.0",
 					"query": "",
 					"scene": null
 				}

@@ -1,15 +1,18 @@
 // pages/orders/all_orders/all_orders.js
+import apiClient from "../../../utils/apiClient.js"
 Page({
   data: {
     tabs: ["All orders", "My orders"],
     activeIndex: 0,
   },
+
   onLoad: function () {
-    var that = this;
+    const page = this;
+    const that = this;
     const options = {
       success: function (res) {
         console.log(res)
-        const stories = res.data.orders
+        const orders = res.data.orders
 
         page.setData({
           orders
@@ -19,16 +22,26 @@ Page({
         console.log(err)
       }
     }
+
     apiClient.getOrders(options)
-    
+
     wx.getLocation({
       type: 'GCJ-02', // **1
       success: function (res) {
+        console.log(11111111111111111111, res)
+        // const latitude = getApp().globalData.latitude
+        // const longitude = getApp().globalData.longitude
+        wx.request({
+          url: '',
+        })
+        console.log(res)
+        // page.setData({longitude: longitude, latitude: latitude})
+        // page.setData({order: order})
         const my_latitude = res.latitude
         const my_longitude = res.longitude
         const my_speed = res.speed
         const my_accuracy = res.accuracy
-        that.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
+        page.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
         const mk = [
           {
             iconPath: "/img/marker.png", // **1
@@ -42,12 +55,12 @@ Page({
           {
             iconPath: "/img/Trash 回收站.png", // **1
             id: 1,
-            latitude: 30.6444,
-            longitude: 104.0999,
+            latitude: 30.66650,
+            longitude: 104.06984,
             width: 40,
             height: 40,
             callout: {
-              content: "Pick up for Alan", fontSize: 15, color: "#000000", padding: 10
+              content: `Pick up for Alan`, fontSize: 15, color: "#000000", padding: 10
             }
           },
           {
@@ -64,16 +77,20 @@ Page({
         ]
         that.setData({mk})
       },
-    })
-    wx.getSystemInfo({
-      success: function (res) {
-        that.setData({
-          sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
-          sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
-        });
+      fail: function(err) {
+        console.log(err)
       }
-    });
+    })
+    // wx.getSystemInfo({
+    //   success: function (res) {
+    //     that.setData({
+    //       sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 2,
+    //       sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
+    //     });
+    //   }
+    // });
   },
+  
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,
