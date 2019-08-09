@@ -8,7 +8,7 @@ Page({
 
   onLoad: function () {
     const page = this;
-
+    const that = this;
     const options = {
       success: function (res) {
         console.log(res)
@@ -22,24 +22,24 @@ Page({
         console.log(err)
       }
     }
-    apiClient.getOrders(options)
-      
+    // apiClient.getOrders(options)
     wx.getLocation({
       type: 'GCJ-02', // **1
       success: function (res) {
         console.log(11111111111111111111, res)
-        const page = this
-        const latitude = getApp().globalData.latitude
-        const longitude = getApp().globalData.longitude
-        console.log(longitude)
-        console.log(latitude)
+        // const latitude = getApp().globalData.latitude
+        // const longitude = getApp().globalData.longitude
+        wx.request({
+          url: '',
+        })
+        console.log(res)
         // page.setData({longitude: longitude, latitude: latitude})
         // page.setData({order: order})
         const my_latitude = res.latitude
         const my_longitude = res.longitude
         const my_speed = res.speed
         const my_accuracy = res.accuracy
-        that.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
+        page.setData({ my_latitude, my_longitude, my_speed, my_accuracy })
         const mk = [
           {
             iconPath: "/img/marker.png", // **1
@@ -53,8 +53,8 @@ Page({
           {
             iconPath: "/img/Trash 回收站.png", // **1
             id: 1,
-            latitude: latitude,
-            longitude: longitude,
+            latitude: 30.66650,
+            longitude: 104.06984,
             width: 40,
             height: 40,
             callout: {
