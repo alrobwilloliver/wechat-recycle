@@ -1,0 +1,9 @@
+/* pages/customer-accepted-order/customer-accepted-order.wxss */
+.img {
+  height: 150%;
+  padding:20rpx;
+}
+
+.view {
+  padding:rpx;
+}
