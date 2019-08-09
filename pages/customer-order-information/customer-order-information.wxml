@@ -1,7 +1,7 @@
 <!--pages/customer-order-information/customer-order-information.wxml-->
 <view class="information">Waiting for collector to accept order</view>  
 <image src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Clock_reversed.gif"></image>
-
+<view class="information">
 <view>Your Order Information</view>
 <view>Name:</view>
 <view>{{order.name}}</view>
@@ -13,3 +13,4 @@
 <view>{{order.date}}</view>
 <view>Pick Up Time</view>
 <view>{{order.time}}</view>
+</view>

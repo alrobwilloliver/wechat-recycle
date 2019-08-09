@@ -8,13 +8,15 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-    <image src="https://images-na.ssl-images-amazon.com/images/I/514fxSmXPnL._SX425_.jpg" class="logo"></image>
+    <image src="https://previews.123rf.com/images/chudtsankov/chudtsankov1607/chudtsankov160700278/61547748-happy-green-recycle-bin-cartoon-mascot-character-waving-for-greeting-illustration-isolated-on-white-.jpg" class="logo"></image>
   </view>
-  <view class="usermotto">
+
   
-    <text class="user-motto">Welcome to WeRecycle!</text>
-    <wux-button size="large" block type="dark" bindtap="goToCustomer"> Login as Customer </wux-button>
-    <wux-button size="large" block type="dark" bindtap="goToOrders"> Login as Collector </wux-button>
-  </view>
+    <view class="information">Welcome to WeRecycle!</view>
+
+    <button class="btn" bindtap="goToCustomer">Log in as a customer</button>
+    <button class="btn" bindtap="goToOrders">Log in as a collector</button>
+  
 </view>
 </view>
+

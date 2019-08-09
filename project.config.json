@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -79,9 +79,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/customer/customer",
-					"pathName": "pages/customer/customer",
+					"id": 4,
+					"name": "customer-accepted-order",
+					"pathName": "pages/customer-accepted-order/customer-accepted-order",
 					"query": "",
 					"scene": null
 				},
@@ -89,6 +89,21 @@
 					"id": -1,
 					"name": "pages/customer-order-information/customer-order-information",
 					"pathName": "pages/customer-order-information/customer-order-information",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customer-order-pickedup",
+					"pathName": "pages/customer-order-pickedup/customer-order-pickedup",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test page ",
+					"pathName": "pages/index/index/2.0",
+					"query": "",
 					"scene": null
 				}
 			]
