@@ -11,7 +11,8 @@ const getOrders = (options) => {
   })
 }
 
-const getOrder = options => {
+const getOrder = (options) => {
+
   const { id, success, fail } = options
 
   return wx.request({
@@ -26,7 +27,7 @@ const updateOrder = options => {
   const { id, data, success, fail } = options
   return wx.request({
     url: baseUrl + `orders/${id}`,
-    method: "patch",
+    method: "get",
     data,
     sucess,
     fail
@@ -35,5 +36,6 @@ const updateOrder = options => {
 
 export default {
   getOrders,
-  updateOrder
+  updateOrder,
+  getOrder
 }
