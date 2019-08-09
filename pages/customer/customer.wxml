@@ -13,7 +13,7 @@
               <view class="weui-label">地址</view>
           </view>
           <view class="weui-cell__bd">
-              <input class="weui-input" bindtap="inputAddress" placeholder="请输入地址" />
+              <input class="weui-input" bindtap="inputAddress" placeholder="请输入地址" value="{{location_name}}" />
           </view>
       </view>
       <view class="div-box">
