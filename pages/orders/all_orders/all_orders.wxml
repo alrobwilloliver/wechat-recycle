@@ -1,6 +1,6 @@
 <!--pages/orders/all_orders/all_orders.wxml-->
 <view class="page">
-    <view>Orders:</view>
+    <view class="information">Orders:</view>
     <map longitude="{{my_longitude}}" latitude="{{my_latitude}}" scale="{{15}}" style="width: 100%; height: 60vh;" markers="{{mk}}"></map>
     <!-- <view>Get current location</view>
     <view>--------------------</view>
@@ -8,6 +8,7 @@
     <view>Longitude : {{longitude}}</view>
     <view>Speed : {{speed}}</view>
     <view>Accuracy : {{Accuracy}}</view> -->
+
   <block
   wx:for="{{orders}}"
   wx:for-item="order"
@@ -24,6 +25,7 @@
     </view>
   </block>
   <view>
+
     <view>2. Zoe</view>
     <view>Address:</view>
     <view>永立龙寓 成都</view>

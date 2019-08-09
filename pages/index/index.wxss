@@ -17,11 +17,8 @@
   color: #aaa;
 }
 
-.usermotto {
-  
-}
-
 .logo {
   height:400rpx
 }
+
 

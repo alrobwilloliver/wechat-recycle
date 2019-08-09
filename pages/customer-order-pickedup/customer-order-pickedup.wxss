@@ -1,1 +1,16 @@
 /* pages/customer-order-pickedup/customer-order-pickedup.wxss */
+.information{
+padding: 20rpx;
+align-content: center;
+background-color: -moz-only-whitespace;
+margin-top:50rpx;
+margin-bottom: 50rpx;
+margin-left: 50rpx;
+margin-right: 50rpx;
+border-style: solid;
+border-width:1rpx;
+border-color: #7BB32E;
+border-radius: 10rpx;
+border-width: 10rpx;
+background-color: #D3D3D3;
+}
