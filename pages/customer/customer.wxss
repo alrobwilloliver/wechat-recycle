@@ -1,6 +1,6 @@
 .weui-btn-area {
   position: fixed;
-  bottom: 0px;
+  bottom: 5px;
   width: 100%;
   color: #7BB32E;
 }
