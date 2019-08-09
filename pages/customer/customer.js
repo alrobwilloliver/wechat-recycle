@@ -24,15 +24,16 @@ Page({
     const date = page.data.date
     const phoneNumber = page.data.phoneNumber
     const time = page.data.time
-    const name = page.data.name
+    //const name = page.data.name
     const order = {
-      name: name,
+      //name: name,
       address: getApp().globalData.address,
       customer_phone_number: phoneNumber,
       date: date,
       time: time,
-      customer_id: 1
+      customer_id: 37
     }
+
 
     getApp().globalData.order = order
 

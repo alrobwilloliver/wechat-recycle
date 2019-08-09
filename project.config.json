@@ -23,7 +23,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
 	"appid": "wxc64ac9e2a182d9c6",
-	"projectname": "wechat-werecycle",
+	"projectname": "wechat-recycle",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
