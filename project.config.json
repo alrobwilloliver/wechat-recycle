@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -82,6 +82,21 @@
 					"id": -1,
 					"name": "pages/customer/customer",
 					"pathName": "pages/customer/customer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customer accepted order",
+					"pathName": "pages/customer-accepted-order/customer-accepted-order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "customer order picked up",
+					"pathName": "pages/customer-order-pickedup/customer-order-pickedup",
+					"query": "",
 					"scene": null
 				}
 			]

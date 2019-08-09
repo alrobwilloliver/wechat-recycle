@@ -5,7 +5,9 @@
     "pages/customer/customer",
     "pages/customer-order-information/customer-order-information",
     "pages/orders/all_orders/all_orders",
-    "pages/orders/my_orders/my_orders"
+    "pages/orders/my_orders/my_orders",
+    "pages/customer-accepted-order/customer-accepted-order",
+    "pages/customer-order-pickedup/customer-order-pickedup"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,5 +15,12 @@
     "navigationBarTitleText": "WeRecycle",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap9.json"
+  "sitemapLocation": "sitemap9.json",
+  
+    "permission": {
+      "scope.userLocation": {
+        "desc": "A message to tell the user why you need permission"
+      }
+    }
+  
 }
