@@ -12,8 +12,8 @@
   wx:for="{{orders}}"
   wx:for-item="order"
   >
-    <view>
-      <view>Customer Name:{{order.name}}</view>
+    <view data-id="{{order.id}}">
+      <view>Customer Name:{{order.customer.name}}</view>
       <view>Address:</view>
       <view id="address">{{order.address}}</view>
       <view>Customer's Number:</view>
