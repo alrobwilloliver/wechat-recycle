@@ -11,6 +11,17 @@ const getOrders = (options) => {
   })
 }
 
+const getOrder = options => {
+  const { id, success, fail } = options
+
+  return wx.request({
+    url: baseUrl + `orders/${id}`,
+    method: "get",
+    success,
+    fail
+  })
+}
+
 const updateOrder = options => {
   const { id, data, success, fail } = options
   return wx.request({

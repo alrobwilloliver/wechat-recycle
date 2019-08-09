@@ -26,17 +26,21 @@ Page({
     const phoneNumber = page.data.phoneNumber
     const time = page.data.time
     const name = page.data.name
-    const address = page.data.address
-    console.log(address)
+    // const address = page.data.address
+    const latitude = page.data.latitude
+    const longitude = page.data.longitude
+    console.log(111111111111, getApp().globalData.address)
     const order = {
       name: name,
-      address: address,
+      address: app.globalData.address,
       customer_phone_number: phoneNumber,
       date: date,
       time: time,
-      customer_id: app.globalData.userId
+      customer_id: app.globalData.userId,
+      latitude: latitude,
+      longitude: longitude
     }
-
+    console.log(order)
 
     getApp().globalData.order = order
 
@@ -64,12 +68,17 @@ Page({
     const page = this
     wx.chooseLocation({
       success: function (res) {
+        console.log(res)
         getApp().globalData.address = `${res.name}, ${res.address}`
-        getApp().globalData.longitude = res.longitude
-        getApp().globalData.latitude = res.latitude
+        // getApp().globalData.longitude = res.longitude
+        // getApp().globalData.latitude = res.latitude
         const locationName = res.name
+        const lat = res.latitude
+        const long = res.longitude
         page.setData({
-          location_name: locationName
+          location_name: locationName,
+          latitude: lat,
+          longitude: long
         })
       }
     })
